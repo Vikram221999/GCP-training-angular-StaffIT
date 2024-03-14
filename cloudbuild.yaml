@@ -7,5 +7,5 @@ steps:
   args: ['push', 'us-docker.pkg.dev/muthu-training-2024/gcp-training-repo/demo-vikram']
   id: image-push
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy','demo-vikram','--image', 'us-docker.pkg.dev/muthu-training-2024/gcp-training-repo/demo-vikram','--region','us-central1']
+  args: ['run','jobs', 'deploy','demo-vikram','--image', 'us-docker.pkg.dev/muthu-training-2024/gcp-training-repo/demo-vikram','--region','us-central1']
   id: image-deploy
